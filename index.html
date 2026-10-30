@@ -1327,6 +1327,22 @@ html[lang="vi"] #review .sample.why1::before { content: "Vì sao? "; }
 .opt-step { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; text-decoration-color: var(--orange, #DD5A28); }
 .opt-note { margin: 6px 0 0; font-size: .9em; color: var(--muted); }
 
+/* Compact cue cards (teacher 30/10/2026: "cho nhỏ lại, vừa đủ để xem"): the whole diagram ≤ 560 px wide, centred, smaller text */
+.cue-ig { width: 100%; max-width: 560px; margin-inline: auto; }
+.cue-ig .ci-a4 { padding: 3.6cqi 3.4cqi 3.2cqi; border-radius: 14px; }
+.cue-ig .ci-box { border-width: 2px; border-radius: 12px; padding: 1.3cqi 1.5cqi; box-shadow: 0 2px 6px rgba(60,50,90,.08); }
+.cue-ig .ci-box b { font-size: clamp(11px, 2.05cqi, 14px); }
+.cue-ig .ci-ic { font-size: clamp(15px, 3.4cqi, 22px); }
+.cue-ig .ci-centre { min-height: 0; }
+.cue-ig .ci-centre b { font-size: clamp(12px, 2.4cqi, 16px); }
+.cue-ig .ci-centre .ci-ic { font-size: clamp(17px, 4cqi, 26px); }
+.cue-ig .ci-say { font-size: clamp(10.5px, 1.7cqi, 12.5px); }
+.cue-ig .ci-own b { font-size: clamp(10.5px, 1.8cqi, 13px); }
+.cue-ig .ci-tag { font-size: 10.5px; padding: 2px 9px; }
+.cue-ig .ci-n { width: 18px; height: 18px; top: -8px; left: -8px; font-size: 11px; }
+.cue-ig .ci-top::after, .cue-ig .ci-bottom::after { width: 4px; left: calc(50% - 2px); }
+.cue-ig .ci-left::after, .cue-ig .ci-right::after { height: 4px; top: calc(50% - 2px); }
+
 /* ===== Sheet 11 · Vocabulary in Action (S13–S16, R15, E1) — scoped to #action ===== */
 /* Goal only (no "Done when"): one full-width card */
 #action .stage-goal { grid-template-columns: 1fr; }
